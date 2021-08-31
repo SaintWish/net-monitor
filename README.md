@@ -15,16 +15,16 @@ Go to [http://localhost:3030/d/o9mIe_Aik/internet-connection](http://localhost:3
 
 ## Known Issues
 On the Raspberry Pi 3B running `Raspbian 10 (buster)` if you get a similar error to this:
-``
+```
 speedtest_1   | Fatal Python error: init_interp_main: can't initialize time
 speedtest_1   | Python runtime state: core initialized
 speedtest_1   | PermissionError: [Errno 1] Operation not permitted
-``
+```
 
 You need to get a updated `libseccomp2` package. Which you can do by typing this in.
-``
+```
 wget http://ftp.us.debian.org/debian/pool/main/libs/libseccomp/libseccomp2_2.5.1-1_armhf.deb && sudo dpkg -i libseccomp2_2.5.1-1_armhf.deb
-``
+```
 
 ## Credits
 * Thanks to @geerlingguy because this entire thing is based off his [internet monitor](https://github.com/geerlingguy/internet-pi)
