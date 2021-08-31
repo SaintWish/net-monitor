@@ -16,7 +16,7 @@ services:
       - ./prometheus/:/etc/prometheus/
       - prometheus_data:/prometheus
     command:
-      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--config.file=./prometheus/prometheus.yml'
       - '--storage.tsdb.path=/prometheus'
       - '--storage.tsdb.retention.time=90d'
       - '--web.console.libraries=/usr/share/prometheus/console_libraries'
@@ -24,7 +24,7 @@ services:
     ports:
       - 9090:9090
     links:
-      - blackbox-ping:blackbox-ping
+      - ping:ping
       - speedtest:speedtest
     networks:
       - back-tier
@@ -45,7 +45,7 @@ services:
       - back-tier
       - front-tier
 
-  blackbox-ping:
+  ping:
     tty: true
     stdin_open: true
     expose:
