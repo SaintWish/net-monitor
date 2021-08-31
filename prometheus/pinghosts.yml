@@ -1,0 +1,4 @@
+- targets:  # url;humanname
+    - https://www.google.com/;google.com
+    - 8.8.8.8;googledns
+    - 1.1.1.1;cloudflaredns
