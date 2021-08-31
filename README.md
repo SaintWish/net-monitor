@@ -4,6 +4,8 @@ Prometheus and Grafana internet monitor Docker stack made for personal use.
 ## Notice
 I modified this for my personal needs to run on my Raspberry Pi 3B, so use this at your own risk. It is also recommended that you know what you're doing before attempting to use this project.
 
+Keep in mind this is not secured so it's not recommended to run this on an open network.
+
 ## Quick Start
 ```
 git clone https://github.com/geerlingguy/internet-monitoring
@@ -24,6 +26,13 @@ speedtest_1   | PermissionError: [Errno 1] Operation not permitted
 You need to get a updated `libseccomp2` package. Which you can do by typing this in.
 ```
 wget http://ftp.us.debian.org/debian/pool/main/libs/libseccomp/libseccomp2_2.5.1-1_armhf.deb && sudo dpkg -i libseccomp2_2.5.1-1_armhf.deb
+```
+
+## Uninstalling
+To uninstall this from your system you can use the following commands.
+```
+cd ~/net-monitor && docker-compose down -v
+docker system prune -f
 ```
 
 ## Credits
