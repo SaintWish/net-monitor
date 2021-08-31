@@ -32,7 +32,7 @@ wget http://ftp.us.debian.org/debian/pool/main/libs/libseccomp/libseccomp2_2.5.1
 To uninstall this from your system you can use the following commands.
 ```
 cd ~/net-monitor && docker-compose down -v
-docker system prune -f
+docker system prune -a
 ```
 
 ## Credits
