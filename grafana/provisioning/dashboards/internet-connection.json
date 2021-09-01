@@ -87,7 +87,7 @@
           "refId": "A"
         }
       ],
-      "title": "Download",
+      "title": "Download Speed",
       "type": "gauge"
     },
     {
@@ -158,7 +158,7 @@
           "refId": "A"
         }
       ],
-      "title": "Upload",
+      "title": "Upload Speed",
       "type": "gauge"
     },
     {
@@ -231,7 +231,7 @@
           "refId": "A"
         }
       ],
-      "title": "Speedtest Ping",
+      "title": "Ping",
       "type": "gauge"
     },
     {
