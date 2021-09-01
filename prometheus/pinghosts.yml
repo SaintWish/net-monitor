@@ -1,4 +1,4 @@
-- targets:  # url;humanname
+- targets:  # url;humanname;internal/external
     - http://www.google.com;google.com;external
     - http://github.com;github.com;external
     - 1.1.1.1;cloudflaredns;external
