@@ -40,7 +40,7 @@ services:
     ports:
       - 3030:3000
     env_file:
-      - ./grafana/config.monitoring
+      - ./grafana/config.env
     networks:
       - back-tier
       - front-tier
