@@ -6,6 +6,9 @@ I modified this for my personal needs to run on my Raspberry Pi 3B, so use this 
 
 Keep in mind this is not secured so it's not recommended to run this on an open network.
 
+## Requirements
+You are required to have Docker and Docker Compose on your system to use this project. [Docker Install](https://dev.to/elalemanyo/how-to-install-docker-and-docker-compose-on-raspberry-pi-1mo)
+
 ## Quick Start
 ```
 git clone https://github.com/geerlingguy/internet-monitoring
@@ -33,6 +36,7 @@ To uninstall this from your system you can use the following commands.
 ```
 cd ~/net-monitor && docker-compose down -v
 docker system prune -a
+docker volume prune
 ```
 
 ## Credits
